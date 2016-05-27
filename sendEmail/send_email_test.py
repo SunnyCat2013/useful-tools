@@ -1,5 +1,4 @@
-#! usr/bin/python
-#coding=utf-8
+# -*- coding:utf-8 -*-
 # Author: cslzy
 # Email: lizhenyang_2008@163.com
 # Description: if the files number is enough, send email to me.
