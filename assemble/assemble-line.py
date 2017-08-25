@@ -31,7 +31,37 @@ def genKey(floatValue, step = STEP):
 
     return str(int(math.floor(floatValue / step) * step))
 
+def printInfo():
+    print '--------------------------------------------'
+    print 'Step: ', STEP
+
+    print 'Min price: ', MIN_PRICE
+
+    print 'Dimension limitation: ', dimension_checker
+
+    # colomn to group
+    print 'Amount index: ', amount_index
+
+    # column to assemble
+    print 'Quantity index: ', quantity_index
+
+
+    # delimiter
+    print 'Separator: ', separator
+
+    # has header or not
+    if has_header:
+        print 'Has header:'
+    else:
+        print 'Doesn\'t has header'
+
+    print '--------------------------------------------'
+    print ''
+
+
 def main():
+    printInfo()
+
     res_dict = dict()
     with open(infile, 'r') as inf:
         lines = inf.readlines()
